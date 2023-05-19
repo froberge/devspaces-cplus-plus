@@ -1,0 +1,41 @@
+schemaVersion: 2.1.0
+metadata:
+  name: cplus-plus-devspaces
+projects:
+  - git: 
+      remotes:
+        origin: 'https://github.com/froberge/devspaces-cplus-plus'
+    name: devspaces-cplus-plus
+components:
+  - name: tools
+    container:
+      env:
+        - name: CHE_DASHBOARD_URL
+          value: 'https://devspaces.apps.home.myocp.net'
+        - name: CHE_PLUGIN_REGISTRY_URL
+          value: 'https://devspaces.apps.home.myocp.net/plugin-registry/v3'
+        - name: CHE_PLUGIN_REGISTRY_INTERNAL_URL
+          value: 'http://plugin-registry.devspaces.svc:8080/v3'
+        - name: OPENVSX_REGISTRY_URL
+          value: 'https://open-vsx.org'
+      image: registry.redhat.io/devspaces/udi-rhel8:3.5
+      memoryRequest: 1Gi
+      memoryLimit: 3Gi
+      cpuLimit: 2000m
+      cpuRequest: 500m
+  - name: kustomize
+    container:
+        image: k8s.gcr.io/kustomize/kustomize:v3.8.7
+        # type: dockerimage
+        command:
+          - tail
+        args:
+          - '-f'
+          - /dev/null
+        # volumes:
+        #   - name: kubeconfig
+        #     containerPath: /.kube
+        memoryLimit: 256Mi
+        memoryRequest: 128Mi
+        cpuLimit: 500m
+        cpuRequest: 200m
