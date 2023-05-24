@@ -10,6 +10,7 @@ As of OpenShift DevSpaces 3.3, Openshidt Dev Spaces support three browser based 
 
 The sample Devfile load the sample code and all you need to get started to compile the code.
 
+:exclamation: This is a sample repository, that could be clone as a starting base for any c++ project
 
 
 ## Loading the workspace in OpenShift Dev Spaces
