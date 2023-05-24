@@ -12,6 +12,15 @@ As of OpenShift DevSpaces 3.3, Openshidt Dev Spaces support three browser based 
 The sample Devfile load the sample code and all you need to get started to compile the code.
 
 
+
+## Loading the workspace.
+
+* With `Vs Code` use:
+    > https://github.com/froberge/devspaces-cplus-plus
+
+* With IntelliJ
+    > https://github.com/froberge/devspaces-cplus-plus?che-editor=che-incubator/che-idea/latest
+
 ## Execute the code.
 
 To execute the file fom a terminal.
