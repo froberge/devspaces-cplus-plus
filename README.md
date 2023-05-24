@@ -1,6 +1,5 @@
 # C++ in OpenShift Dev Spaces 3.5.0+
 
-
 This is a basic repo to demonstrate running a sample C++ applications in OpenShift Dev Spaces 3.5+.
 
 As of OpenShift DevSpaces 3.3, Openshidt Dev Spaces support three browser based IDEs
