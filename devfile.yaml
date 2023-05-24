@@ -23,19 +23,3 @@ components:
       memoryLimit: 3Gi
       cpuLimit: 2000m
       cpuRequest: 500m
-  - name: kustomize
-    container:
-        image: k8s.gcr.io/kustomize/kustomize:v3.8.7
-        # type: dockerimage
-        command:
-          - tail
-        args:
-          - '-f'
-          - /dev/null
-        # volumes:
-        #   - name: kubeconfig
-        #     containerPath: /.kube
-        memoryLimit: 256Mi
-        memoryRequest: 128Mi
-        cpuLimit: 500m
-        cpuRequest: 200m
