@@ -35,3 +35,10 @@ g++ -o Test main.cpp
 ```
 ./Test
 ```
+
+## Interacting with git.
+
+Once the files is load from GitHub. Enter the next to line into a terminal.
+
+> git config  user.name "[YOUR NAME]"
+> git config  user.name "[YOUR EMAIL]"
