@@ -13,7 +13,7 @@ The sample Devfile load the sample code and all you need to get started to compi
 
 
 
-## Loading the workspace.
+## Loading the workspace in OpenShift Dev Spaces
 
 * With `Vs Code` use:
     > https://github.com/froberge/devspaces-cplus-plus
