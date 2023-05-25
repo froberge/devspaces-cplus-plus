@@ -62,3 +62,6 @@ bin/
 
 # Local environment
 .env
+
+# Ignore executable generated
+App
