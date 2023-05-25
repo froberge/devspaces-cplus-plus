@@ -23,3 +23,23 @@ components:
       memoryLimit: 3Gi
       cpuLimit: 2000m
       cpuRequest: 500m
+commands:
+  - id: build-app
+    exec:
+      label: 1. Build App
+      commandLine: g++ -o App main.cpp
+      component: tools
+      group:
+        isDefault: true
+        kind: build
+      workingDir: '${PROJECTS_ROOT}/devspaces-cplus-plus/app'
+  - id: run-app
+    exec:
+      label: 2. Run App
+      commandLine: ./App
+      component: tools
+      group:
+        isDefault: true
+        kind: run
+      workingDir: '${PROJECTS_ROOT}/devspaces-cplus-plus/app'
+
