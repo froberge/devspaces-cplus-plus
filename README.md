@@ -5,7 +5,7 @@ This is a basic repo to demonstrate running a sample C++ applications in OpenShi
 As of OpenShift DevSpaces 3.3, Openshidt Dev Spaces support three browser based IDEs
 1. __MS Visual Studio Code__ >> che-incubator/che-code/insiders
 1. JetBrain IntelliJ IDEA >>  che-incubator/che-idea/latest
-1. Eclipse Theai >> eclipse/che-theia/latest
+1. Eclipse Theai >> che-incubator/che-theia/latest
 
 
 The sample Devfile load the sample code and all you need to get started to compile the code.
