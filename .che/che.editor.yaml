@@ -1,1 +1,6 @@
+# Current possible values
+# vs_code: che-incubator/che-code/insiders
+# IntelliJ: che-incubator/che-idea/latest
+# Thea: eclipse/che-theia/latest
+
 id: che-incubator/che-code/insiders
