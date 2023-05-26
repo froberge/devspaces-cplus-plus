@@ -42,13 +42,3 @@ commands:
         isDefault: true
         kind: run
       workingDir: '${PROJECTS_ROOT}/devspaces-cplus-plus/app'
-  - id: build-app2
-    exec:
-      label: 3. Build App2
-      commandLine: g++ -o App2 main.cpp
-      component: tools
-      group:
-        isDefault: true
-        kind: build
-      workingDir: '${PROJECTS_ROOT}/devspaces-cplus-plus/app'
-
